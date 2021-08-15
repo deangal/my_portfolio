@@ -1,0 +1,128 @@
+@import '../../global.scss';
+
+.work{
+    background-color: rgb(162, 94, 250);;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+
+    .arrow{
+        position: absolute;
+        @include mobile{
+            display: none;
+         }
+
+        &.left{
+            left: 400px;
+            cursor: pointer;
+        }
+
+        &.right{
+            right: 400px;
+            cursor: pointer;
+        }
+    }
+
+    .slider{
+        min-height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease;
+
+
+        @include mobile{
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:last-child{
+               span{
+                   display: none;
+               }
+            }
+
+            .item{
+                width: 800px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-self: center;
+                overflow: hidden;
+
+
+                @include mobile{
+                    width: 90%;
+                    max-height: 210px;
+                    margin: 10px 0;
+                 }
+
+                .left{
+                    flex: 4;
+                    min-height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-self: center;
+                    margin-left: 14px;
+
+                   
+                    .leftContainer{
+                      width: 90%;
+                      height: 80%;
+                      display: flex;
+                      flex-direction: column;  
+                      justify-content: space-between;
+                      
+
+                      .imgContainer{
+                          width: 40px;
+                          min-height: 40px;
+                          text-align: center;
+                          border-radius: 50%;
+                          background-color: rgb(241, 175, 137);
+                      }
+
+                      h2{
+                        font-size: 20px;  
+
+                        @include mobile {
+                            font-size: 17px;
+                            font-weight: 600 ;
+                        }
+                      }
+                      p{
+                          font-size: 13px;
+                      }
+                      span{
+                          font-size: 12px;
+                          font-weight: 600;
+                          text-decoration: underline;
+                          cursor: pointer;
+                          color: black;
+                      }
+                    }
+                }
+
+                .right{
+                    flex: 7;
+                    height: 100%;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 600px;
+                        transform: rotate(59deg)
+                    }
+                }
+            }
+        }
+    }
+}
