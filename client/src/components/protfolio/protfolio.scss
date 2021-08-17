@@ -9,8 +9,10 @@
     h1{
         margin-top: 40px;
         font-size: 60px;
+        
         @include mobile{
             font-size: 20px;
+            min-height: 35px;
         }
     }
 
@@ -23,6 +25,8 @@
             flex-wrap: wrap;
             justify-content: center;
             margin: 10px 0;
+            min-height: 50px;
+
         }
         
         
@@ -51,27 +55,75 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
+
         @include mobile{
         width: 100%;
-           
+        
+        }
+
+        .backItem{
+            width: 296px;
+            height: 196px;
+            margin: 10px 15px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            color: black;
+            position: relative;
+            cursor: pointer;
+            border: 2px solid $mainColor ;
+            background-color: rgb(241, 241, 241);
+
+            @include mobile{
+                width:196px;
+                height: 196px;
+             }
+
+            .backTop{
+                margin-top: 10px;
+                height: 35px;
+
+                
+            }
+
+            .backText{
+                margin-top: 5px;
+                margin-left: 9px;
+                margin-right: 5px;
+                font-size: 17px;
+                font-weight: 400;
+                justify-content: space-between;
+            }
+
+            
+
+
+
+
         }
         
-
         .item{
-            width: 220px;
-            height: 150px;
+            width: 300px;
+            height: 200px;
             border-radius: 20px;
-            margin: 10px 20px;
+            margin: 10px 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             position: relative;
             cursor: pointer;
+            
+            
+
+            
 
             @include mobile{
-                width: 120px;
-                height: 120px;
+                width:200px;
+                height: 200px;
              }
 
             h3{
@@ -86,7 +138,7 @@
                 z-index: 1;
             }
             &:hover{
-                background-color: $mainColor;
+                background-color: #29076e;
                 img{
                     opacity: 0.2;
                     z-index: 0;
@@ -94,5 +146,6 @@
             }
         }
     }
-    
+
+ 
 }
