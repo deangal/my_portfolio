@@ -1,0 +1,120 @@
+@import "../../global.scss";
+
+.container {
+  position: relative;
+  top: 45%;
+}
+
+.contact {
+  background-color: white;
+  display: flex;
+  position: relative;
+  
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-left: 100px;
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+
+      @include mobile {
+        height: 90%;
+      }
+    }
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .right {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      margin-right: 0;
+      flex: 1;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .email {
+      padding: 5px !important;
+      color: black !important;
+    }
+
+    .message {
+      padding: 5px !important;
+      color: black !important;
+    }
+
+    .messagex {
+      input {
+        height: 25vh;
+      }
+      @include mobile {
+        height: 9vh;
+      }
+    }
+
+    input {
+      width: 300px;
+      height: 30px;
+      font-size: 14px;
+
+      @include mobile {
+        width: 200px;
+        height: 20px;
+      }
+    }
+
+    textarea {
+      width: 300px;
+      height: 200px;
+      font-size: 14px;
+
+      @include mobile {
+        width: 200px;
+        height: 100px;
+      }
+    }
+
+    button {
+      width: 100px;
+      height: 45px;
+      color: white;
+      background-color: rgb(214, 88, 109);
+      border: none;
+      font-size: 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

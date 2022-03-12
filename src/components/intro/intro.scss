@@ -1,0 +1,110 @@
+@import '../../global.scss';
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+.content_container{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 95%;
+  padding: 50px;
+  text-align: right;
+}
+
+.svg_container{
+    position: relative;
+    top: 90%;
+}
+
+.intro{
+    background-color: white;
+    display: flex;
+
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    //left css
+    .left{
+        flex: 0.1 ;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+// right css
+    .right{
+        flex: 0.9 ;
+        position: relative;
+
+        .wrapper{
+
+            width: 100%;
+            height: 100%;
+            padding-left: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+            }
+        }
+
+        h1{
+            font-size: 60px;
+            margin: 10px 0; 
+            @include mobile{
+                font-size: 40px;
+            }
+        }
+
+        h2{
+            font-size: 35px;
+
+        }
+
+        h3{
+            font-size: 30px;
+            @include mobile{
+                font-size: 20px;
+            }
+
+            span{
+                font-size: inherit;
+                color: rgb(134, 44, 252);;
+            }
+            
+            @keyframes blink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 30%;
+
+           
+           } 
+        }
+    }
+    
+
