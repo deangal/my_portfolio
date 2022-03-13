@@ -23,7 +23,7 @@ const Intro = () => {
             <div className="left">
                 <a href="#protfolio">
                     <div className="svg_container">
-                        <ArrowDownwardIcon style={{ fontSize: 80 , color:'black'}} />
+                        <ArrowDownwardIcon style={{ fontSize: 80 , color:'white'}} />
                     </div>
                 </a>
             </div>

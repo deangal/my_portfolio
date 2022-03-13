@@ -45,8 +45,13 @@ const Contact = () => {
     <div className="contact" id="contact">
 
       <div className="left">
-          <div className="container">
-            <h1>LOCATION AND ATRACTIONS</h1>
+        <h1>מיקום</h1>
+          <div className="map_container">
+          
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%D7%A0%D7%94%D7%A8%D7%99%D7%94%20%D7%92%D7%A2%D7%AA%D7%95%D7%9F%201&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+     
+         </div></div>
+
           </div>
         {/* <img src={contact} alt="" /> */}
       </div>
@@ -57,6 +62,7 @@ const Contact = () => {
           className="paper"
           style={{
             padding: 10,
+            overflow:'hidden',
             height: "65vh",
             width: 315,
             margin: "15px 15px",

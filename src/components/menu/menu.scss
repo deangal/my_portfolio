@@ -3,7 +3,7 @@
 .menu{
     width: 300px;
     height: 100vh;
-    background-color: $mainColor;
+    background-color: black;
     position: fixed;
     top: 0;
     right: -300px;
@@ -23,12 +23,14 @@
         padding: 0;
         list-style: none;
         font-size: 30px;
-        font-weight: 200;
-        color: white;
+        color: rgb(212, 175, 55);
         width: 60%;
         
         li{
             margin-bottom: 20px;
+            font-weight: 400;
+
+
             a{
                 font-size: inherit;
                 color: inherit;
@@ -36,7 +38,7 @@
             }
 
             &:hover{
-                font-weight: 400;
+                font-weight: 600;
             }
         }
     }
